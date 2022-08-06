@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFURSX+cKL9EIR+ZOhtILOnl9GIKSS7V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Edad</title>
+</head>
+<body>
+    <div class="calculator-form">
+        <h1>Calculadora de Edad</h1>
+        <div class="inputs">
+            <div class="block">
+                <label for="date">Día</label>
+                <input type="number" max="31" class="input" id="date"  placeholder="dd" required>
+            </div>
+            <div class="block">
+                <label for="month">Mes</label>
+                <input type="number" max="12" class="input" id="month" placeholder="mm" required>
+            </div>
+            <div class="block">
+                <label for="year">Año</label>
+                <input type="number" class="input" id="year" placeholder="yyyy" required>
+            </div>
+        </div>
+        <button type="submit" class="btn" onclick="calculateAge()">Calcular</button>
+
+        <p id="displayAge"></p>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
